@@ -1,5 +1,55 @@
-.venv
-.python-version
-main.py
-pyproject.toml
-uv.lock
+# 🔐 ENV (CRITICAL)
+.env
+.env.*
+*.env
+
+# 🐍 Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 🧪 Virtual environments
+.venv/
+venv/
+env/
+
+# 📦 Build artifacts
+build/
+dist/
+*.egg-info/
+
+# 📊 Local bot state
+positions.json
+*.db
+*.sqlite3
+
+# 📝 Logs
+*.log
+
+# 🧠 Jupyter
+.ipynb_checkpoints/
+
+# 🖥️ OS junk
+.DS_Store
+Thumbs.db
+
+# 🧰 IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🔒 Secrets / local configs
+secrets.json
+config.local.py
+
+# 🔁 Temp files
+*.tmp
+*.bak
+
+# ⚙️ Optional: ignore uv cache (not lock file)
+.uv/
+
+# ❌ DO NOT IGNORE THESE
+# pyproject.toml
+# uv.lock  ← keep this for reproducibility
